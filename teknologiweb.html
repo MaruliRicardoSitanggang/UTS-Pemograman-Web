@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Mengenal Teknologi Web</title>
+  <link rel="stylesheet" href="styl.css">
+</head>
+<body>
+  <nav class="navbar">
+    <div class="logo">Portofolio</div>
+    <ul class="nav-links" id="navLinks">
+      <li><a href="index.html">Beranda</a></li>
+      <li><a href="mengenal.html" class="active">Mengenal Teknologi</a></li>
+      <li><a href="tatacara.html">Cara Membuat Website</a></li>
+      <li><a href="kesanpesan.html">Kesan & Pesan</a></li>
+      <li><a href="kontak.html">Kontak</a></li>
+    </ul>
+    <div class="menu-controls">
+      <button onclick="toggleTheme()" class="theme-btn">🌙</button>
+      <div class="hamburger" id="hamburger">&#9776;</div>
+    </div>
+  </nav>
+<section class="section mengenal">
+  <div class="container mengenal">
+    <h2>Mengenal HTML, CSS, JavaScript & Tailwind CSS</h2>
+    <p class="intro-text">
+      Empat teknologi utama yang digunakan dalam pembuatan website modern.
+      HTML membentuk struktur, CSS mempercantik tampilan, Tailwind mempercepat desain,
+      dan JavaScript membuat website menjadi interaktif.
+    </p>
+
+    <div class="tech-grid">
+      <div class="card">
+        <h3> HTML</h3>
+        <p>
+          HTML (HyperText Markup Language) adalah dasar setiap halaman web.
+          Ia membangun struktur seperti teks, gambar, tabel, dan tautan agar dapat
+          ditampilkan di browser.
+        </p>
+        <code>
+          &lt;h1&gt;Halo Dunia&lt;/h1&gt;<br>
+          &lt;p&gt;Selamat datang di web saya.&lt;/p&gt;
+        </code>
+      </div>
+
+      <div class="card">
+        <h3> CSS</h3>
+        <p>
+          CSS (Cascading Style Sheets) mempercantik tampilan halaman. Dengan CSS,
+          kamu bisa memberi warna, mengatur ukuran, jarak, dan membuat animasi agar web terlihat menarik.
+        </p>
+        <code>
+          p { <br>
+          &nbsp;&nbsp;color: blue;<br>
+          &nbsp;&nbsp;font-size: 18px;<br>
+          }
+        </code>
+      </div>
+
+      <div class="card">
+        <h3> Tailwind CSS</h3>
+        <p>
+          Framework CSS modern berbasis utility class yang mempercepat desain
+          tanpa menulis CSS baru. Sangat populer di kalangan developer modern.
+        </p>
+        <code>
+          &lt;div class="bg-blue-500 text-white p-4 rounded"&gt;<br>
+          &nbsp;&nbsp;Halo&lt;/div&gt;
+        </code>
+      </div>
+
+      <div class="card">
+        <h3> JavaScript</h3>
+        <p>
+          Bahasa pemrograman yang menambahkan interaktivitas dan logika pada web.
+          JavaScript dapat menampilkan pesan, memvalidasi form, hingga membuat animasi.
+        </p>
+        <code>
+            document.querySelector
+            ("button").onclick = () =&gt; alert("Hai!");
+          </code>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <footer>
+    <p>© 2025 Maruli Ricardo Sitanggang | Universitas Sumatera Utara</p>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>
